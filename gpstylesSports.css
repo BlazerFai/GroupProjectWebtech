@@ -1,0 +1,426 @@
+/*Background*/
+body {
+  background-color: #064670;
+  margin: 0;
+  padding: 0;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  font-family: sans-serif; 
+}
+
+/*Date*/
+#current-date-gregorian {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 1px;
+  background-color: #064670;
+}
+
+#current-date-islamic {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 1px;
+  background-color: #064670;
+}
+
+
+/*Header Section*/
+header {
+font-size: 35px;
+text-align: center;
+padding: 20px;
+background-color: #ffd700;
+overflow: hidden; 
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 auto;
+}
+
+/*Siddiq Logo*/
+.logo img {
+max-width: 100%;
+height: auto;
+margin-bottom: 10px;
+position: center;
+}
+
+/*Navigation bar*/
+nav {
+display: flex;
+flex-direction: row,column ;
+justify-content: space-around; /* Distribute space around items */
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+background-color: #ffd700;
+padding: 20px;
+text-align: center;
+margin: 0 auto; 
+}
+
+/*Navigational Items*/
+nav a {
+text-decoration: none;
+text-align: center;
+font-family: sans-serif;
+color: #fff;
+margin: 0 10px;
+font-size: 20px;
+padding: 15px 20px;
+border-radius: 8px;
+background-color: #064670;
+transition: background-color 0.3s, color 0.3s;
+flex-grow: 1; 
+}
+
+/*Navigational Items when hovered with mouse*/
+nav a:hover {
+background-color: #fff; 
+color: #064670; 
+}
+
+/*Column Layout for all three columns*/
+.column-layout {
+  background-image: url('gpimages/IslamicBG.jpg');
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  column-gap: 40px;
+  display:flex;
+}
+
+/*Siddiq Falcon Logo*/
+.falconLogo{
+  max-width: 80%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/*About us section*/
+.about-us-section p{
+  text-align: left;
+  text-indent: 4rem;
+}
+
+/* Container for the sports section */
+.sports-section {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flexbox;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/*Containers for sports images*/
+.image-container {
+  position: relative;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  display: inline-block;
+  width: 19%; /* Initial width of each container */
+  height: auto; /* Initial height of each container */
+}
+
+/* Images inside the container */
+.image-container img {
+  width: 100%; /* Make the image fill the container */
+  height: auto;
+  transition: transform 0.25s, width 1s, height 1s; /* Smooth transition effect for scaling */
+}
+
+/* Images zoom when cursor is hovered over them */
+.image-container:hover img {
+  transform: scale(2);
+  filter: brightness(0.5);
+}
+
+/* Text for each sport image */
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Text only appears when cursor is hovering over image */
+.image-container:hover .image-text {
+  opacity: 1;
+}
+
+/*Main (Middle) Column*/
+.main-column {
+  text-align: center;
+  font-size: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 50px;
+  border: 5px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  flex:5;
+  order:2;
+}
+
+/*main column h2 presets*/
+.main-column h2{
+  font-size: 30px;
+  font-family: sans-serif;
+  background-color: #D2AA22;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/*h3 presets*/
+.main-column h3{
+  font-size: 40px;
+  font-family: sans-serif;
+  color: #064670;
+  line-height: 0.5;
+  text-align: center;
+}
+
+
+
+/* Register section */
+.register-section a{
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: #D2AA22;
+  transition: background-color 0.3s, color 0.3s;
+  flex-grow: 1; 
+}
+
+/* Learn more button under register section */
+.register-section a:hover{
+  background-color: #eeeeee;
+  color: #064670;
+}
+
+/*Quick Link*/ 
+.sidebar-one {
+  text-align: center;
+  font-size: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  flex: 1;
+  order: 1;
+  background-color: #d1d1d1;
+}
+
+/*Quick Link Header/Title*/
+.sidebar-one h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  background-color: #064670;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/*Quick Link Unordered List*/
+.sidebar-one ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+/*Quick Link List Items*/
+.sidebar-one li {
+  margin-bottom: 10px;
+}
+
+/*Quick Link Items Text Color*/
+.sidebar-one a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #2c3e50; 
+  transition: color 0.3s;
+}
+
+/*Quick Link Items Text Color when Hovered*/
+.sidebar-one a:hover {
+  color: #3498db;
+}
+
+/*Other Mahallahs' Websites*/
+.sidebar-two {
+  text-align: center;
+  font-size: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  flex: 1;
+  order: 3;
+  background-color: #d1d1d1;
+}
+
+/*Other Mahallahs' Websites Header/Title*/
+.sidebar-two h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  background-color: #064670;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/*Other Mahallahs' Websites Unordered List*/
+.sidebar-two ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+/*Other Mahallahs' Websites List Items*/
+.sidebar-two li {
+  margin-bottom: 10px;
+}
+
+/*Other Mahallahs' Websites Text Color*/
+.sidebar-two a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #2c3e50; 
+  transition: color 0.3s;
+}
+
+/*Other Mahallahs' Websites Text Color when Hovered*/
+.sidebar-two a:hover {
+  color: #3498db;
+}
+
+/*Copyright*/
+footer {
+font-family: sans-serif;
+text-align: center;
+padding: 10px;
+background-color: #ffd700;
+}
+
+@media only screen and (max-width: 768px) {
+/*Date*/
+#current-date {
+  max-width: 2000px;
+  text-align: center;
+  font-size: small;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 1%;
+  background-color: #0863B3;
+  }
+
+/*Header Section*/
+header {
+  font-size: 35px;
+  text-align: center;
+  padding: 0px;
+  background-color: #ffd700;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  /*Siddiq Logo*/
+  .logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    position: center;
+    }
+
+  /* Adjust styles for smaller screens */
+  nav {
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a {
+  width: 100%; /* Set the width to 100% for equal width in the media section */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  margin: 2px;
+}
+
+  .column-layout {
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Main (Middle) Column*/
+.main-column {
+  max-width: 100%;
+  order: 1; /* Set the order to 1 to display main-column on top */
+  margin: 10px 0;
+  }
+
+  .sidebar-one {
+    order: 2; /* Set the order to 2 for sidebar-one */
+  }
+
+  .sidebar-two {
+    order: 3; /* Set the order to 2 for sidebar-one */
+  }
+  .sidebar-one,
+  .sidebar-two {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 10px 0;
+  }
+
+.main-column h3 {
+  line-height: 100%;
+  font-size: large;
+}
+
+.main-column h2 {
+  font-size: large;
+}
+
+.main-column p {
+  font-size: small;
+}
+
+/* Container for the sports section */
+.sports-section {
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  display: inline-block;
+  width: 50%; /* Initial width of each container */
+  height: auto; /* Initial height of each container */
+  margin: 0.1%;
+}
+
+}
+
